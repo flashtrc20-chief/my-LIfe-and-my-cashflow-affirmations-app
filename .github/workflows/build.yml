@@ -5,6 +5,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -24,8 +25,9 @@ jobs:
       run: chmod +x ./gradlew
     
     - name: Build APK with Gradle
-  run: ./gradlew assembleDebug
-    GRADLE_OPTS: -Xmx64m
+      run: ./gradlew assembleDebug
+      env:
+        GRADLE_OPTS: -Xmx4096m
     
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
