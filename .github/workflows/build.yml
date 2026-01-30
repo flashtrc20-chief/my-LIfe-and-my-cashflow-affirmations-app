@@ -24,8 +24,9 @@ jobs:
       run: chmod +x ./gradlew
     
     - name: Build APK with Gradle
-  run: ./gradlew assembleDebug
-    GRADLE_OPTS: -Xmx64m
+      run: ./gradlew assembleDebug
+      env:
+        GRADLE_OPTS: -Xmx64m
     
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
