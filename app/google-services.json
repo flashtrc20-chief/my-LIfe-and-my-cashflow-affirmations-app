@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "735248485662",
+    "project_id": "life-n-cash-flow-affirmations",
+    "storage_bucket": "life-n-cash-flow-affirmations.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735248485662:android:42098d2b0571996b8bcd0f",
+        "android_client_info": {
+          "package_name": "com.affirmations.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAezXx6OVyNC4EyRerg6u9KSw_dNsS6eK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
